@@ -29,7 +29,6 @@ public class Controller {
 	
 	//create tasks
 	@PostMapping("/tasks")
-	
 	public Task createTask(@RequestBody Task task) {
 		return taskRepository.save(task);
 	} 
